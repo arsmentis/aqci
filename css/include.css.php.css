@@ -1,0 +1,511 @@
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   { display: block }
+li              { display: list-item }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+col             { display: table-column }
+colgroup        { display: table-column-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bolder; text-align: center }
+caption         { text-align: center }
+body            { margin: 0px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+/*
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            { margin: 1.12em 0 }
+*/
+form						{ margin:0; }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace }
+pre             { white-space: pre }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+/*
+table           { border-spacing: 1px; }
+*/
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th          { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+/*
+ol, ul, dir,
+menu, dd        { margin-left: 80px }
+*/
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { text-decoration: underline }
+br:before       { content: "\A" }
+:before, :after { white-space: pre-line }
+center          { text-align: center }
+:link, :visited { text-decoration: underline }
+:focus          { }
+
+img {border:0px}
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  h1            { }
+  h1, h2, h3,
+  h4, h5, h6    { }
+  ul, ol, dl    { }
+}
+
+.article_col_views, .article_col_comments {font-size:.83em; width:30%; padding-left:6px; border-left:1px solid #CCC}
+.article_header {margin:0 0 3px 0;}
+.article_datedescription {font-style:italic; font-size:.83em}
+.article_description {color:#666; font-size:.9em}
+.article_imagecolumn {padding:5px;}
+.article_contentcolumn {padding-left:10px}
+.article_table {margin-bottom:8px}
+.articles_title {}
+
+.calendar_active_day {border:1px solid #CCC;}
+.calendar_changespan_box {margin-bottom:5px;}
+.calendar_changespan_box select {border:2px solid #CCC; padding:3px}
+.calendar_date {color:#000; font-weight:bold; padding:3px}
+.calendar_display {background:#DDD}
+.calendar_display tr td.calendar_active_day {background:#FFF;}
+.calendar_display_box {min-height:100px;}
+.calendar_inactive_day {
+	vertical-align:top;
+	border:1px solid #CCC;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.calendar_event_table_container {padding:3px; background:#FF6; border-top:2px solid #F93;}
+.calendar_event_datedescription {font-size:10px}
+.calendar_event_table tr td {font-size:.9em}
+.calendar_display tr td.calendar_day_header_wke {background:#EEE; color:#333; text-align:center; font-weight:bold; border:1px solid #CCC;}
+.calendar_display tr td.calendar_day_header_wkd {background:#EEE; color:#333; text-align:center; font-weight:bold; border:1px solid #CCC;}
+
+.cart_quick_details_column {vertical-align:middle; padding-top:3px}
+.cart_quick_free_shipping {color:#F00; font-weight:bold}
+.cart_productcode {color:#666; font-size:.8em; font-style:italic}
+.cart_table {background:#CCC}
+.cart_table th {background:url(https://www.americanqualitycleaninginc.com/images/cm_specbg.jpg) repeat-x}
+.cart_table th.align_left {text-align:left}
+.cart_table th.align_right {text-align:right}
+.cart_table td {background:#FFF}
+.cart_table .border_bottom {border-bottom:1px solid #CCC;}
+.cart_table .border_top_total {border-top:1px solid #666;}
+.cart_table_print th {background:url(https://www.americanqualitycleaninginc.com/images/cm_specbg.jpg) repeat-x #DDD; border:1px solid #AAA}
+.cart_table_print th.align_left {text-align:left}
+.cart_table_print th.align_right {text-align:right}
+.cart_table_print td {background:#FFF; vertical-align:top; border:1px solid #CCC}
+.cart_table_print td.vertical_middle {vertical-align:middle}
+.cart_table_print td.fieldgray {background:#EEE}
+.cart_table_print .border_bottom {border-bottom:1px solid #CCC;}
+.cart_table_print .border_top_total {border-top:1px solid #666;}
+.cart_table_print {}
+.cart_subtotal_display {text-align:right; margin-top:5px; color:#000; margin-right:5px}
+.cart_total_display {font-size:1.4em; text-align:right; margin-top:5px; color:#000; margin-right:5px}
+.cart_subtotal_title {color:#666}
+.cart_total_title {color:#666}
+.cart_transaction_history_header {margin-bottom:5px; margin-top:15px}
+.cart_table_ups {background:#CCC}
+.cart_table_ups th {background:#d4ccbf}
+.cart_table_ups td {background:#ebebe6}
+
+.chk_lightorange {border:1px solid #f5da6e; background:url(https://www.americanqualitycleaninginc.com/images/chk_lightorange.jpg) repeat-x top center #fde688;}
+.chk_lightorange .form_text, .chk_lightorange .form_select{border:1px solid #ebcb4b; padding:2px}
+.chk_lightorange .form_question{border-top:0px; margin-top:0px; padding-top:0px; color:#900}
+.chk_silver {border:1px solid #DDD; background:url(https://www.americanqualitycleaninginc.com/images/chk_silver.jpg) repeat-x top center #ebeaea;}
+.chk_silver .form_text{border:1px solid #CCC; padding:2px}
+.chk_silver .form_cd_question_container{border-top:1px solid #FFF}
+.chk_silver .form_cd_question_table{border:0px}
+.chk_silver .form_question{border-top:1px solid #FFF}
+.chk_silver .form_answer{}
+
+.comment_all_box {}
+.comment_list_title {font-size:1.2em; font-weight:bold; padding-bottom:5px; border-bottom:1px dotted #999; margin-bottom:10px}
+.comment_posted_box {margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #CCC}
+.comment_posted_date {font-style:italic; font-size:.9em; margin-top:3px}
+.comment_posted_date_tag {font-style:italic; color:#666;}
+.comment_posted_by { font-weight:bold }
+.comment_flag_box {margin-top:3px}
+.comment_firsttoadd_message {font-style:italic}
+
+/* Coupon Classes */
+
+.coupon_clickfordetails {font-size:.8em; font-weight:normal}
+.coupon_cutout {border:2px dashed #999; width:100%}
+.coupon_cutout h4 {margin:0 0 5px 0}
+.coupon_expiration {color:#666; font-style:italic}
+.coupon_print_button {margin-top:5px}
+.coupon_title {margin:0 0 3px 0}
+.coupons_table {margin-bottom:10px; width:100%}
+.coupons_table h1{margin-top:0px; margin-bottom:5px}
+
+/* Coupon Classes */
+
+.default_video_box {margin-top:10px; margin-bottom:10px}
+.gallery_enlarge_text {display:none;}
+.helpinstructions {margin-bottom:10px}
+
+.invoice_balance_remaining_notice {font-size:1.3em; font-weight:bold; color:#F00}
+.invoice_balance_remaining_clickhere {margin-bottom:10px}
+.invoice_notes_to_user {margin-bottom:10px}
+
+.link_to_overflow {width:250px; overflow-x:hidden; border:1px solid #999}
+.link_to {border:0px}
+.location_boundingbox {width:480px; overflow-x:scroll}
+
+.login_account_notice {margin:5px 0;}
+
+.post_sharing_box {}
+
+.p-testimonial {padding:20px; border:1px solid #CCC; background:#EEE; color:#333; font-style:italic; font-size:1.1em}
+.p-testimonial cite {display:block; text-align:right; padding-top:8px}
+
+.product_main_category {margin-bottom:10px}
+.product_main_sublink {font-weight:bold}
+.product_main_category_sub {font-size:.85em}
+.product_main_category_sub2 {margin-left:8px}
+
+a.product_main_sublink_sel, a.product_sub_sublink_sel, a.product_sub2_sublink_sel {color:#000; font-weight:bold; background:#EEE}
+.product_nav_section_header {margin-bottom:5px;}
+
+.product_cat_column {border:2px solid #DDD}
+.product_code {font-style:italic; color:#666; margin-bottom:2px; font-size:10px}
+.product_cost {margin:6px; height:70px}
+.product_cost_box_standard {background:#F0F0FF; border:2px solid #BDD0F4}
+.product_cost_box_lowerprice {background:#FCE78F; border:2px solid #F48E5E}
+.product_cost_view {font-weight:bold; margin-bottom:5px; color:#060; font-size:14px}
+.product_costtext_view {font-size:11px; font-weight:bold; line-height:13px; color:#060}
+.product_displaycost_subtext {font-size:10px; font-weight:normal}
+.product_details_header, .product_parts_details_header, .product_accessories_details_header{font-weight:bold; color:#000; font-family:Tahoma, Geneva, sans-serif; cursor:pointer}
+.product_details_header {margin-top:20px; padding:4px; background:url(https://www.americanqualitycleaninginc.com/images/prs_back_details.jpg) no-repeat right;}
+.product_parts_details_header {padding:4px; background:url(https://www.americanqualitycleaninginc.com/images/prs_back_parts.jpg) no-repeat right;}
+.product_accessories_details_header {padding:4px; background:url(https://www.americanqualitycleaninginc.com/images/prs_back_accessories.jpg) no-repeat right;}
+.product_itemcost {font-weight:bold; font-size:1.4em; margin-bottom:5px; border-bottom:4px solid #EEE; padding-bottom:6px; text-align:right}
+.product_addtocart_container {border:2px solid #EEE; margin-bottom:4px;}
+.product_addtocart_table {border:1px solid #CCC}
+.product_addtocart_table td {background:#FFF; }
+.product_notavailable_notice {font-style:italic; color:#666}
+.product_title_header {margin-bottom:15px; padding-bottom:10px; border-bottom:1px dotted #CCC}
+.product_title {margin-bottom:8px}
+.product_inventorystatus {font-style:italic}
+.product_outofinventorystatus {font-style:italic; color:#F00}
+.product_itemcode {color:#666; font-style:italic;}
+.product_attr_title {font-weight:bold}
+.product_short_description {margin-top:15px; border-top:4px solid #EEE; padding-top:4px}
+.product_full_description, .product_parts_full_description, .product_accessories_full_description {margin-top:10px; margin-bottom:20px}
+.product_header {min-height:30px; font-size:.9em}
+.product_how_purchase {color:#990000; margin-bottom:3px; font-size:.9em}
+.product_imagecolumn {}
+.product_imagecontainer {min-height:100px; display:table-cell; vertical-align:bottom}
+
+.product_addon_container {margin-bottom:6px; padding-bottom:4px; border-bottom:1px dotted #999}
+.product_addon_cost_box_standard {background:#F0F0FF; border:2px solid #BDD0F4; width:170px; height:70px; text-align:center}
+.product_addon_cost_box_lowerprice {background:#FCE78F; border:2px solid #F48E5E; width:170px; height:70px; text-align:center}
+.product_addon_cost {margin:6px;}
+.product_addon_cost_view {font-weight:bold; margin-bottom:3px; color:#060; font-size:14px}
+.product_addon_costtext_view {font-size:11px; font-weight:bold; line-height:13px; color:#060}
+.product_addon_addtocart { width:60px; text-align:right; float:right; margin-left:6px; padding-left:6px; border-left:2px solid #FFF; height:48px}
+.product_addon_quantitybox {font-size:10px; margin-right:3px}
+.product_addon_quantity {margin-top:2px}
+.product_addon_addtext {font-weight:bold; color:#00C}
+.product_addon_code {font-style:italic; color:#666; margin-bottom:2px; font-size:10px}
+.product_addon_shortdescription {font-size:10px}
+
+.product_attr_title_sub {font-style:italic; float:left; margin-right:4px}
+
+.product_filter_sort_title {font-weight:bold; margin-bottom:2px; padding-bottom:2px; border-bottom:1px dotted #CCC}
+.product_filter_sort_label {font-size:.9em}
+
+.product_itemcost_original {color:#F00; text-decoration:line-through; text-align:right; padding-right:5px}
+
+.prod_sub_select_container {background:#DDD; padding:3px}
+
+.product_variation_description {}
+.product_variation_line{ border-top:1px solid #DDD; vertical-align:top; color:#333}
+.product_variation_cost{ text-align:right }
+.product_variation_savings_cost{color:#F00; font-size:.8em; font-style:italic}
+.product_variation_productcode {font-style:italic; color:#666; font-size:.8em; line-height:1.1em; margin-top:2px}
+
+.profile_link_result_name{font-size:.8em}
+
+.rating{
+	width:80px;
+	height:16px;
+	margin:0 0 20px 0;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+	background: url(https://www.americanqualitycleaninginc.com/images/star-matrix.gif) no-repeat 0 0;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.nostar {background-position:0 -160px}
+.onestar {background-position:0 0}
+.twostar {background-position:0 -16px}
+.threestar {background-position:0 -32px}
+.fourstar {background-position:0 -48px}
+.fivestar {background-position:0 -64px}
+.sixstar {background-position:0 -80px}
+.sevenstar {background-position:0 -96px}
+.eightstar {background-position:0 -112px}
+.ninestar {background-position:0 -128px}
+.tenstar {background-position:0 -144px}
+ul.rating li {
+	cursor: pointer;
+ /*ie5 mac doesn't like it if the list is floated\*/
+	float:left;
+	/* end hide*/
+	text-indent:-999em;
+}
+ul.rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+ul.rating li.six a {left:80px;}
+ul.rating li.seven a {left:96px;}
+ul.rating li.eight a {left:112px;}
+ul.rating li.nine a {left:128px;}
+ul.rating li.ten a {left:144px;}
+
+ul.rating li a:hover {
+	z-index:2;
+	width:80px;
+	height:16px;
+	overflow:hidden;
+	left:0;	
+	background: url(https://www.americanqualitycleaninginc.com/images/star-matrix.gif) no-repeat 0 0
+}
+ul.rating li.one a:hover {background-position:0 -176px;}
+ul.rating li.two a:hover {background-position:0 -192px;}
+ul.rating li.three a:hover {background-position:0 -208px}
+ul.rating li.four a:hover {background-position:0 -224px}
+ul.rating li.five a:hover {background-position:0 -240px}
+ul.rating li.six a:hover {background-position:0 -256px}
+ul.rating li.seven a:hover {background-position:0 -272px}
+ul.rating li.eight a:hover {background-position:0 -288px}
+ul.rating li.nine a:hover {background-position:0 -304px}
+ul.rating li.ten a:hover {background-position:0 -320px}
+
+.remove_post_header {margin-bottom:5px; color:#900; margin-top:15px}
+.rss_feed_box {margin-top:5px; font-size:.9em}
+
+.savings_cost {color:#F00}
+
+.shipping_estimator_container {margin-top:10px; margin-bottom:10px}
+
+.slideshow-images img { background-color:#FFF; }
+
+.support_response {color:#090}
+.customer_response {color:#666}
+
+.supportticket_completedresponse {margin-top:2px}
+.supportticket_response {margin-top:3px}
+.supportticket_textresponse {width:98%; background:#FFF; padding:4px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; border:1px solid #BBB}
+.supportticket_button_container {margin-top:3px}
+
+.addpost_help_tip { font-weight:normal; font-style:italic; color:#666 }
+.addpost_submit_box {}
+.addpost_question_box {margin-bottom:5px}
+.addpost_question_title { font-weight:normal}
+.userpost_message_box {margin-bottom:10px; padding:8px; background:#FBF2B7; border:4px solid #F8E981}
+.userpost_message_editlink_box {}
+.userpost_message_header {font-size:1.3em; font-weight:bold; color:#BF0000}
+.userpost_preview_link {margin-bottom:10px;}
+
+/* mediaboxAdvanced - white theme */
+
+#mbOverlay {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+	cursor: pointer;
+}
+
+#mbOverlay.mbOverlayFF {
+	background: transparent url(../cm/unifrontend/images/80.png) repeat;
+}
+
+#mbOverlay.mbOverlayIE {
+	position: absolute;
+}
+
+#mbCenter {
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	overflow: hidden;
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.40);
+	-webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.40);
+}
+
+#mbCenter.mbLoading {
+	background: #fff url(../cm/unifrontend/images/WhiteLoading.gif) no-repeat center;
+
+/*	This style is applied only during animation.	*/
+/*	For example, the following turns off shadows,	*/
+/*	helping browser performance on slow systems.	*/
+/*	To leave shadows on, just remove these lines:	*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#mbImage {
+	position: relative;
+	left: 0;
+	top: 0;
+
+/*	Begin styles for inline content, if no style is given	*/
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+#mbImage a, #mbImage a:link, #mbImage a:visited {
+	color: #333;
+}
+
+#mbImage a:hover, #mbImage a:active {
+	color: #000;
+}
+
+/*	End inline content styles	*/
+
+#mbBottom {
+	min-height: 40px;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	text-align: left;
+	padding: 0 10px 10px;
+}
+
+#mbTop {
+	padding: 10px 10px 20px;
+}
+
+#mbTitle {
+	display: inline;
+	color: #000;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+#mbNumber {
+	display: inline;
+	color: #333;
+	line-height: 14px;
+	font-size: 10px;
+	margin: auto 10px auto 0px;
+}
+
+#mbCaption {
+	display: block;
+	color: #333;
+	line-height: 14px;
+	font-size: 10px;
+}
+
+#mbPrevLink, #mbNextLink, #mbCloseLink {
+	display: block;
+	float: right;
+	height: 20px;
+	margin: 0;
+	outline: none;
+}
+
+#mbPrevLink {
+	width: 83px;
+	background: transparent url(../cm/unifrontend/images/WhitePrevious.gif) no-repeat center;
+}
+
+#mbNextLink {
+	width: 54px;
+	background: transparent url(../cm/unifrontend/images/WhiteNext.gif) no-repeat center;
+}
+
+#mbCloseLink {
+	width: 65px;
+	background: transparent url(../cm/unifrontend/images/WhiteClose.gif) no-repeat center;
+}
+
+/*	Styles for flash version alert	*/
+
+#mbError {
+	position: relative;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	border: 10px solid #700;
+	padding: 10px 10px 10px;
+	margin: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#mbError a, #mbError a:link, #mbError a:visited, #mbError a:hover, #mbError a:active {
+	color: #700;
+	font-weight: bold;
+	text-decoration: underline;
+}
