@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
   $emailFrom = $_POST['email'];
   $phone = $_POST['phone'];
   $comment = $_POST['comment'];
+  $ref = $_SERVER['HTTP_REFERER'];
 
   $emailTo = "sarah@arsmentis.com"; // production email: info@americanqualitycleaninginc.com
   $subject = "New lead from site";
@@ -14,7 +15,7 @@ if (isset($_POST['submit'])) {
 
   mail($mailTo, $subject, $message, $headers);
   header("HTTP/1.1 303 See Other");
-  header("Location: contact-us.html#lead_box");
+  header("Location: $ref#lead_box");
 }
 
 ?>
