@@ -1,0 +1,13 @@
+/* Special styles for the success message for the contact form */
+
+.successMessage {
+    display: block;
+    padding: 1.5em;
+    border: 3px solid #3CB371;
+    background-color: #c4e8d4;
+}
+
+.successParagraph {
+    margin-bottom: 0;
+    color: #3CB371;
+}
