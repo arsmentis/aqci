@@ -24,6 +24,7 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
 	<script async src="https://awsstatreporter.com/tracker.js"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -112,83 +113,71 @@ Since 2003			</div>
 			</div>
 		</main>
 		<aside class="content-sub columns large-4">
-			<div class="content-sub-text form-container">
-								<div class="lead_box" id="lead_box"> <div class="lead-head">Schedule a Free<strong>On-Site Assessment &amp; Estimate </strong></div> <p>Let us know how to reach you!</p> <form method="post" action="reviews.html#lead_box">
-    <div class="required form_required_div margin_bottom_10 form-required-div">
-        * Indicates required questions    </div>
-    	    
-    					<div class="fm-question-container form_cd_question_container fm-fei-8 fm-qt-NAME_FULL_FIRSTLAST">
-					                                              <div class="fm-question fm-cd-question form_cd_question required">
-                      Name&nbsp;*                  </div>
-                                                            <div class="fm-answer fm-cd-answer form_cd_responses">
-                  	                        <div class="form-cd-name-first">
-                        	<div class="form-cd-name-entry">
-                          	<input type="text" name="QForm[FEI8::K::NAME_FULL_FIRSTLAST::K::FMI7::K::OCI0::K::FEI8::FirstName]" id="NAME_FULL_FIRSTLAST::FirstName" value="" 
-                            autocomplete="on"
-                            style=" "
-                              size="10" class="fm-text form_text required" 
-                               />
-                               <input type="hidden" name="QFormAsked[FEI8::K::NAME_FULL_FIRSTLAST::K::FMI7::K::OCI0::K::FEI8::FirstName][]" value="1" />
-                          </div>
-                          <div class="form-cd-name-desc">
-                          	First                          </div>
-                        </div>
-                                                <div class="form-cd-name-last">
-                        	<div class="form-cd-name-entry">
-                          	<input type="text" name="QForm[FEI8::K::NAME_FULL_FIRSTLAST::K::FMI7::K::OCI0::K::FEI8::LastName]" id="NAME_FULL_FIRSTLAST::LastName" value="" 
-                              autocomplete="on"
-                              style=" "
-                                size="12" class="fm-text form_text required" 
-                                />
-                                <input type="hidden" name="QFormAsked[FEI8::K::NAME_FULL_FIRSTLAST::K::FMI7::K::OCI0::K::FEI8::LastName][]" value="1" />
-                          </div>
-                          <div class="form-cd-name-desc">
-                          	Last                          </div>
-                        </div>
-                                          </div>
-                                                                                              					</div>
-										<div class="fm-question-container form_cd_question_container fm-fei-7 fm-qt-EMAIL">
-					                    		                                                            <div class="fm-question fm-cd-question form_cd_question required">
-                                    Email&nbsp;*                                </div>
-                            							                                                            <div class="fm-answer fm-cd-answer form_cd_responses">
-                                    <input type="email" name="QForm[FEI7::K::EMAIL::K::FMI7::K::OCI0::K::FEI7::Email]" id="EMAIL::Email" value="" 
-                                        autocomplete="on"
-                                        style="  "
-                                        size="10" class="form_text required" 
-                                         />
-                                         <input type="hidden" name="QFormAsked[FEI7::K::EMAIL::K::FMI7::K::OCI0::K::FEI7::Email][]" value="1" />
-                                </div>
-                                                                                                            					</div>
-										<div class="fm-question-container form_cd_question_container fm-fei-6 fm-qt-PHONE_ALLSELECT">
-					                    		                                                            <div class="fm-question fm-cd-question form_cd_question ">
-                                    Phone #                                </div>
-                            							                                                            <div class="fm-answer fm-cd-answer form_cd_responses">
-                                    <input type="text" name="QForm[FEI6::K::PHONE_ALLSELECT::K::FMI7::K::OCI0::K::FEI6::MobilePhone]" id="PHONE_ALLSELECT::MobilePhone" value="" 
-                                        autocomplete="on"
-                                        style="  "
-                                        size="10" class="form_text " 
-                                         />
-                                         <input type="hidden" name="QFormAsked[FEI6::K::PHONE_ALLSELECT::K::FMI7::K::OCI0::K::FEI6::MobilePhone][]" value="1" />
-                                </div>
-                                                                                                            					</div>
-											<div class="fm-question-container form_question fm-qid-1">
-						<div class="fm-question required">How can we help you?&nbsp;*</div>					<div class="fm-answer form_answer">
-													<textarea name="QForm[QNI1::K::FMI7::K::OCI0::K::FEI5][]" id="QForm_1" class="form_textarea required"
-									style="  "
-									rows="5" cols="30"></textarea>	
-												<input type="hidden" name="QFormAsked[QNI1::K::FMI7::K::OCI0::K::FEI5][]" value="1" />
-											</div>
-						            </div>
-                        <div style="position:absolute; left:-3500px">
-        	<input type="text" class="form_text" name="sph_reqinfo" value="" autocomplete="new-password" />
-        </div>
+      <div class="content-sub-text form-container">
+        <div class="lead_box" id="lead_box">
+          <div class="lead-head">Schedule a Free <strong>On-Site Assessment &amp; Estimate</strong></div>
+          <form id="contactForm" name="contactForm" action="postform.php" method="post" style="display: block;">
+            <p>Let us know how to reach you!</p>
+            <div class="required form_required_div margin_bottom_10 form-required-div">* Indicates required questions</div>
+            <div class="fm-question-container form_cd_question_container fm-fei-8 fm-qt-NAME_FULL_FIRSTLAST">
+              <div class="fm-question fm-cd-question form_cd_question required">Name&nbsp;*</div>
+              <div class="fm-answer fm-cd-answer form_cd_responses">
+                <div class="form-cd-name-first">
+                  <div class="form-cd-name-entry">
+                    <input type="text" name="firstName" id="NAME_FULL_FIRSTLAST::FirstName" value="" autocomplete="on" style="" size="10" class="fm-text form_text required" placeholder="First" />
+                    <input type="hidden" name="firstName" value="1" />
+                  </div>
+                  <div class="form-cd-name-desc">First</div>
+                </div>
+                <div class="form-cd-name-last">
+                  <div class="form-cd-name-entry">
+                    <input type="text" name="lastName" id="NAME_FULL_FIRSTLAST::LastName" value="" autocomplete="on" style="" size="12" class="fm-text form_text required" placeholder="Last" />
+                    <input type="hidden" name="lastName" value="1" />
+                  </div>
+                  <div class="form-cd-name-desc">Last</div>
+                </div>
+              </div>
+            </div>
+            <div class="fm-question-container form_cd_question_container fm-fei-7 fm-qt-EMAIL">
+              <div class="fm-question fm-cd-question form_cd_question required">Email&nbsp;*</div>
+              <div class="fm-answer fm-cd-answer form_cd_responses">
+                <input type="email" name="email" id="EMAIL::Email" value="" autocomplete="on" style="" size="10" class="form_text required" placeholder="your@email.com" />
+                <input type="hidden" name="email" value="1" />
+              </div>
+            </div>
+            <div class="fm-question-container form_cd_question_container fm-fei-6 fm-qt-PHONE_ALLSELECT">
+              <div class="fm-question fm-cd-question form_cd_question ">Phone #</div>
+              <div class="fm-answer fm-cd-answer form_cd_responses">
+                <input type="text" name="phone" id="PHONE_ALLSELECT::MobilePhone" value="" autocomplete="on" style="" size="10" class="form_text" placeholder="555-555-5555" />
+                <input type="hidden" name="phone" value="1" />
+              </div>
+            </div>
+            <div class="fm-question-container form_question fm-qid-1">
+              <div class="fm-question required">How can we help you?&nbsp;*</div>
+              <div class="fm-answer form_answer">
+                <textarea name="comment" id="QForm_1" class="form_textarea required" style="" rows="5" cols="30" placeholder="How can we help you?"></textarea>  
+                <input type="hidden" name="comment" value="1" />
+              </div>
+            </div>
+            <div style="position:absolute; left:-3500px">
+              <input type="text" class="form_text" name="sph_reqinfo" value="" autocomplete="new-password" />
+            </div>
             <div class="fm-submit-container form_submit_container">
-    				<input type="submit" name="CompleteForm" id="CompleteForm" value="Send My Info" class="buttons" />	
-				        <input type="hidden" name="FormSend_GroupID" value="21" /><input type="hidden" name="FormSend_FormID" value="7" /><input type="hidden" name="GroupID_PageComplete" value="1" /><input type="hidden" name="TempForm_CustomerMessageID" value="" /><input type="hidden" name="TempForm_ProcessCustomerID" value="" />    </div>
-</form>
-</div> 
-			</div>
-		</aside>
+              <input type="submit" name="submit" id="CompleteForm" value="Send My Info" class="buttons" />  
+              <input type="hidden" name="FormSend_GroupID" value="21" />
+              <input type="hidden" name="FormSend_FormID" value="7" />
+              <input type="hidden" name="GroupID_PageComplete" value="1" />
+              <input type="hidden" name="TempForm_CustomerMessageID" value="" />
+              <input type="hidden" name="TempForm_ProcessCustomerID" value="" />
+            </div>
+          </form>
+
+          <div id="successMessage" class="successMessage" style="display: none;">
+            <p class="successParagraph"><strong>Thank you for contacting us! We'll be in touch shortly.</strong></p>
+          </div>
+        </div>
+      </div>
+    </aside>
 	</div>
 </section>
 <footer class="page-footer">
@@ -251,6 +240,17 @@ Since 2003			</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script>/*jQuery CDN backup */window.jQuery || document.write('<script src="https://www.americanqualitycleaninginc.com/js/jquery-2.2.0.js">\x3C/script>')</script>
 	<script src="js/site.min.js%3Fv="></script>
+  <script src="js/form.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // Check for query parameter in URL and assign its value to a variable
+      var urlParams = new URLSearchParams(window.location.search);
+
+      // Call function to display success message, passing urlParams
+      displaySuccessMessage(urlParams);
+    });
+  </script>
 	<script type="text/javascript" src="https://cdn.callrail.com/companies/159381845/fe68189a4e6fc80b1fed/12/swap.js"></script> 
 
 
