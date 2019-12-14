@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
   $message = "Lead content: \n\n Name: ".$firstName." ".$lastName."\n\n Email: ".$emailFrom."\n\n Phone Number: ".$phone."\n\n Comments: ".$comment.".";
 
   mail($mailTo, $subject, $message, $headers);
-  header("Location: $ref#lead_box", TRUE, 303);
+  header("Location: $ref?submitted=true", TRUE, 303);
 }
 
 ?>
