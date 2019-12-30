@@ -13,8 +13,8 @@ if (isset($_POST['submit'])) {
   $headers = "From: info@americanqualitycleaninginc.com";
   $message = "Lead content: \n\n Name: ".$firstName." ".$lastName."\n\n Email: ".$emailFrom."\n\n Phone Number: ".$phone."\n\n Comments: ".$comment.".";
 
-  mail($mailTo, $subject, $message, $headers);
-  header("Location: $ref?submitted=true", TRUE, 303);
+  mail($emailTo, $subject, $message, $headers);
+  header("Location: $ref?submitted=true#contactForm", TRUE, 303);
 }
 
 ?>
