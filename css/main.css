@@ -5704,7 +5704,7 @@ ul.custom-list li {
   color: #666;
   font-size: 1.11111rem;
   line-height: 1.22222rem;
-  background-image: url("../images/image-list.png");
+  background-image: url("../images/image-list.svg");
   background-repeat: no-repeat;
   background-position: 0 20%;
   font-style: italic;
@@ -5723,7 +5723,7 @@ ul.custom-list.banner-list.three-columns {
 }
 
 ul.custom-list.banner-list li {
-  background-image: url("../images/image-list-banner.png");
+  background-image: url("../images/image-list-banner.svg");
   padding-left: 40px;
   line-height: 24px;
   color: #fff;
@@ -5737,8 +5737,9 @@ ul.custom-list.banner-list.dark {
 
 ul.custom-list.banner-list.dark li {
   color: #333;
-  background-image: url("../images/image-list-dark.png");
+  background-image: url("../images/image-list-dark.svg");
   background-repeat: no-repeat;
+  font-size: 1.33333rem;
 }
 
 ul.two-columns::before,
@@ -8373,10 +8374,12 @@ footer.page-footer .footer-web-credit a {
     position: relative;
   }
   footer.page-footer .footer-address-info:before {
-    content: url("../images/pin.png");
+    content: url("../images/pin.svg");
     position: absolute;
     left: -15px;
     top: 0;
+    width: 50px;
+    height: 70px;
   }
   footer.page-footer .footer-links ul {
     padding: 0.83333rem 2.22222rem;
@@ -8428,10 +8431,12 @@ footer.page-footer .footer-web-credit a {
     position: relative;
   }
   footer.page-footer .footer-address-info:before {
-    content: url("../images/pin.png");
+    content: url("../images/pin.svg");
     position: absolute;
     left: 0px;
     top: 0;
+    width: 50px;
+    height: 70px;
   }
 }
 
@@ -9100,7 +9105,7 @@ footer.page-footer {
   position: absolute;
   top: -0.61111rem;
   left: 1.66667rem;
-  content: url("../images/coupon-scissors.png");
+  content: url("../images/coupon-scissors.svg");
 }
 
 .coupon .barcode {
@@ -9200,7 +9205,7 @@ footer.page-footer {
   padding-top: 1.66667rem;
   margin: 0 auto 0.83333rem;
   border-radius: 0;
-  background: url("../images/coupon-print.png") center top 20px no-repeat, #fff;
+  background: url("../images/coupon-print.svg") center top 20px no-repeat, #fff;
   border: 1px solid #707070;
   font-size: 0.77778rem;
   text-transform: uppercase;
@@ -9210,7 +9215,7 @@ footer.page-footer {
 }
 
 .coupon .print-coupon-button:hover {
-  background: url("../images/coupon-print.png") center top 20px no-repeat, #ddd;
+  background: url("../images/coupon-print.svg") center top 20px no-repeat, #ddd;
 }
 
 .coupon .coupon-qr-code {
