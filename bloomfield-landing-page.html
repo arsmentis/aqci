@@ -114,7 +114,7 @@
     </section>
     <section class="content sub-page has-sub-banner">
       <div class="row collapse large-unstack">
-        <main class="content-main columns large-8">
+        <div class="content-main columns large-8">
           <div class="content-text">
             <h1>Bloomfield Township&rsquo;s Trusted Choice for Janitorial
               Services</h1>
@@ -233,98 +233,105 @@
               </div>
             </div>
           </div>
-        </main>
-        <aside class="content-sub columns large-4">
-          <div class="content-sub-text form-container">
-            <div class="lead_box" id="lead_box">
-              <div class="lead-head">Schedule a Free <strong>On-Site Assessment
-                  &amp; Estimate</strong></div>
-              <form id="contactForm" name="contactForm" action="postform.php"
-                method="post" style="display: block;">
-                <p>Let us know how to reach you!</p>
-                <div
-                  class="required form_required_div margin_bottom_10 form-required-div">
-                  * Indicates required questions</div>
-                <div
-                  class="fm-question-container form_cd_question_container fm-fei-8 fm-qt-NAME_FULL_FIRSTLAST">
+          </main>
+          <aside class="content-sub columns large-4">
+            <div class="content-sub-text form-container">
+              <div class="lead_box" id="lead_box">
+                <div class="lead-head">Schedule a Free <strong>On-Site
+                    Assessment
+                    &amp; Estimate</strong></div>
+                <form id="contactForm" name="contactForm" action="postform.php"
+                  method="post" style="display: block;">
+                  <p>Let us know how to reach you!</p>
                   <div
-                    class="fm-question fm-cd-question form_cd_question required">
-                    Name&nbsp;*</div>
-                  <div class="fm-answer fm-cd-answer form_cd_responses">
-                    <div class="form-cd-name-first">
-                      <div class="form-cd-name-entry">
-                        <input type="text" name="firstName"
-                          id="NAME_FULL_FIRSTLAST::FirstName" value=""
-                          autocomplete="on" size="10"
-                          class="fm-text form_text required"
-                          placeholder="First *" required aria-required="true" />
-                      </div>
-                      <div class="form-cd-name-desc">First</div>
-                    </div>
-                    <div class="form-cd-name-last">
-                      <div class="form-cd-name-entry">
-                        <input type="text" name="lastName"
-                          id="NAME_FULL_FIRSTLAST::LastName" value=""
-                          autocomplete="on" size="12"
-                          class="fm-text form_text required"
-                          placeholder="Last *" required aria-required="true" />
-                      </div>
-                      <div class="form-cd-name-desc">Last</div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="fm-question-container form_cd_question_container fm-fei-7 fm-qt-EMAIL">
+                    class="required form_required_div margin_bottom_10 form-required-div">
+                    * Indicates required questions</div>
                   <div
-                    class="fm-question fm-cd-question form_cd_question required">
-                    Email&nbsp;*</div>
-                  <div class="fm-answer fm-cd-answer form_cd_responses">
-                    <input type="email" name="email" id="EMAIL::Email" value=""
-                      autocomplete="on" size="10" class="form_text required"
-                      placeholder="your@email.com *" required
-                      aria-required="true" />
+                    class="fm-question-container form_cd_question_container fm-fei-8 fm-qt-NAME_FULL_FIRSTLAST">
+                    <div
+                      class="fm-question fm-cd-question form_cd_question required">
+                      Name&nbsp;*</div>
+                    <div class="fm-answer fm-cd-answer form_cd_responses">
+                      <div class="form-cd-name-first">
+                        <div class="form-cd-name-entry">
+                          <input type="text" name="firstName"
+                            id="NAME_FULL_FIRSTLAST::FirstName" value=""
+                            autocomplete="on" size="10"
+                            class="fm-text form_text required"
+                            placeholder="First *" required
+                            aria-required="true" />
+                        </div>
+                        <div class="form-cd-name-desc">First</div>
+                      </div>
+                      <div class="form-cd-name-last">
+                        <div class="form-cd-name-entry">
+                          <input type="text" name="lastName"
+                            id="NAME_FULL_FIRSTLAST::LastName" value=""
+                            autocomplete="on" size="12"
+                            class="fm-text form_text required"
+                            placeholder="Last *" required
+                            aria-required="true" />
+                        </div>
+                        <div class="form-cd-name-desc">Last</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="fm-question-container form_cd_question_container fm-fei-6 fm-qt-PHONE_ALLSELECT">
-                  <div class="fm-question fm-cd-question form_cd_question ">
-                    Phone #</div>
-                  <div class="fm-answer fm-cd-answer form_cd_responses">
-                    <input type="text" name="phone"
-                      id="PHONE_ALLSELECT::MobilePhone" value=""
-                      autocomplete="on" size="10" class="form_text"
-                      placeholder="555-555-5555 *" required aria-required="true"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                  <div
+                    class="fm-question-container form_cd_question_container fm-fei-7 fm-qt-EMAIL">
+                    <div
+                      class="fm-question fm-cd-question form_cd_question required">
+                      Email&nbsp;*</div>
+                    <div class="fm-answer fm-cd-answer form_cd_responses">
+                      <input type="email" name="email" id="EMAIL::Email"
+                        value="" autocomplete="on" size="10"
+                        class="form_text required"
+                        placeholder="your@email.com *" required
+                        aria-required="true" />
+                    </div>
                   </div>
-                </div>
-                <div class="fm-question-container form_question fm-qid-1">
-                  <div class="fm-question required">How can we help you?&nbsp;*
+                  <div
+                    class="fm-question-container form_cd_question_container fm-fei-6 fm-qt-PHONE_ALLSELECT">
+                    <div class="fm-question fm-cd-question form_cd_question ">
+                      Phone #</div>
+                    <div class="fm-answer fm-cd-answer form_cd_responses">
+                      <input type="text" name="phone"
+                        id="PHONE_ALLSELECT::MobilePhone" value=""
+                        autocomplete="on" size="10" class="form_text"
+                        placeholder="555-555-5555 *" required
+                        aria-required="true"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                    </div>
                   </div>
-                  <div class="fm-answer form_answer">
-                    <textarea name="comment" id="QForm_1"
-                      class="form_textarea required" rows="5" cols="30"
-                      placeholder="How can we help you? *" required
-                      aria-required="true"></textarea>
+                  <div class="fm-question-container form_question fm-qid-1">
+                    <div class="fm-question required">How can we help
+                      you?&nbsp;*
+                    </div>
+                    <div class="fm-answer form_answer">
+                      <textarea name="comment" id="QForm_1"
+                        class="form_textarea required" rows="5" cols="30"
+                        placeholder="How can we help you? *" required
+                        aria-required="true"></textarea>
+                    </div>
                   </div>
+                  <div style="position:absolute; left:-3500px">
+                    <input type="text" class="form_text" name="sph_reqinfo"
+                      value="" autocomplete="new-password" />
+                  </div>
+                  <div class="fm-submit-container form_submit_container">
+                    <input type="submit" name="submit" id="CompleteForm"
+                      value="Send My Info" class="buttons" />
+                  </div>
+                </form>
+                <div id="successMessage" class="successMessage"
+                  style="display: none;">
+                  <p class="successParagraph"><strong>Thank you for contacting
+                      us!
+                      We'll be in touch shortly.</strong></p>
                 </div>
-                <div style="position:absolute; left:-3500px">
-                  <input type="text" class="form_text" name="sph_reqinfo"
-                    value="" autocomplete="new-password" />
-                </div>
-                <div class="fm-submit-container form_submit_container">
-                  <input type="submit" name="submit" id="CompleteForm"
-                    value="Send My Info" class="buttons" />
-                </div>
-              </form>
-              <div id="successMessage" class="successMessage"
-                style="display: none;">
-                <p class="successParagraph"><strong>Thank you for contacting us!
-                    We'll be in touch shortly.</strong></p>
               </div>
             </div>
-          </div>
-        </aside>
-      </div>
+          </aside>
+        </div>
     </section>
     <footer class="page-footer">
       <div class="row align-center large-unstack">
